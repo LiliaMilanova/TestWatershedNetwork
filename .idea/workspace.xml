@@ -11,14 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eb4938d-8417-457a-895e-3c2dfee54a7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient-android-4.3.5/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpcore5-5.0-alpha1/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/apache_mime4j_core_0_7_2_apache_mime4j_core_0_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/httpclient_4_5_2_httpclient_4_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/httpcore_4_4_4_httpcore_4_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/httpmime_4_5_2_httpmime_4_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apache-mime4j-core-0.7.2/apache-mime4j-core-0.7.2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apache-mime4j-core-0.7.2/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient-4.5.2/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient-4.5.2/httpclient-4.5.2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpcore-4.4.4/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpcore-4.4.4/httpcore-4.4.4.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpmime-4.5.2/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpmime-4.5.2/httpmime-4.5.2.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/httpclient-android-4.3.5/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/httpclient-android-4.3.5/httpclient-android-4.3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/httpcore5-5.0-alpha1/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/httpcore5-5.0-alpha1/httpcore5-5.0-alpha1.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watershed.iml" afterPath="$PROJECT_DIR$/watershed.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watershed/build.gradle" afterPath="$PROJECT_DIR$/watershed/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watershed/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/watershed/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java" afterPath="$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watershed/watershed-watershed.iml" afterPath="$PROJECT_DIR$/watershed/watershed-watershed.iml" />
     </list>
@@ -51,9 +64,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.972119">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding />
+            <state vertical-scroll-proportion="5.6779323">
+              <caret line="176" column="47" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/watershed/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -128,8 +143,18 @@
       <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.5862069">
               <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,12 +185,28 @@
           <value>
             <list>
               <ExternalProjectPojo>
+                <option name="name" value=":httpmime-4.5.2" />
+                <option name="path" value="$PROJECT_DIR$/httpmime-4.5.2" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value="watershed" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":watershed" />
                 <option name="path" value="$PROJECT_DIR$/watershed" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":httpcore-4.4.4" />
+                <option name="path" value="$PROJECT_DIR$/httpcore-4.4.4" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":httpclient-4.5.2" />
+                <option name="path" value="$PROJECT_DIR$/httpclient-4.5.2" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":apache-mime4j-core-0.7.2" />
+                <option name="path" value="$PROJECT_DIR$/apache-mime4j-core-0.7.2" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -1720,7 +1761,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="8781732212568" />
+        <entry key="$PROJECT_DIR$" value="11709384322145" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2497,8 +2538,8 @@
         <option value="$PROJECT_DIR$/watershed/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/PostTask.java" />
         <option value="$PROJECT_DIR$/watershed/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java" />
         <option value="$PROJECT_DIR$/watershed/build.gradle" />
+        <option value="$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2722,6 +2763,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="watershed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="watershed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpmime-4.5.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="watershed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="watershed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpclient-4.5.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -2731,10 +2800,10 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="/media/changliu/Research/sdk" />
     <property name="com.android.studio.selected.modules.on.import" value="httpmime-4.5.2&#10;watershed&#10;watershed-watershed&#10;httpcore-4.4.4&#10;httpclient-4.5.2&#10;apache-mime4j-core-0.7.2" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="watershed" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="a76c3148" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/watershed/src/main/lib/httpclient-android-4.3.5.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/watershed/src/main/lib/httpcore-4.4.4.jar" />
   </component>
   <component name="RunManager" selected="Android Application.watershed-watershed">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -3023,14 +3092,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3812636" sideWeight="0.46581197" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41939" sideWeight="0.44230768" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3812636" sideWeight="0.53418803" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41939" sideWeight="0.5576923" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.033769064" sideWeight="0.4957265" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37908497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3075,7 +3144,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3146,7 +3217,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3198,14 +3271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -3263,19 +3328,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5862069">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/watershed/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watershed/src/main/java/com/example/watershed/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.972119">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding />
+        <state vertical-scroll-proportion="5.6779323">
+          <caret line="176" column="47" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

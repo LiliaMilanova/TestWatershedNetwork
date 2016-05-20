@@ -13,10 +13,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
@@ -170,36 +174,37 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void sendPostRequest() {
+    public void sendPostRequest(String imgFilePath) {
 
         try
         {
             HttpClient client = new DefaultHttpClient();
-            HttpPost post = new HttpPost(URL);
+            String url = "http://129.63.16.66:8000/image/";
+            HttpPost post = new HttpPost(url);
 
             MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
             entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
 
-            entityBuilder.addTextBody(USER_ID, userId);
-            entityBuilder.addTextBody(NAME, name);
-            entityBuilder.addTextBody(TYPE, type);
-            entityBuilder.addTextBody(COMMENT, comment);
-            entityBuilder.addTextBody(LATITUDE, String.valueOf(User.Latitude));
-            entityBuilder.addTextBody(LONGITUDE, String.valueOf(User.Longitude));
+            String HeaderKey = "Content-type";
+            String HeaderValue = "multipart/form-data";
+
+            String ContentKey = "image";
+            File file = new File(imgFilePath);
+
+            entityBuilder.addTextBody(HeaderKey, HeaderValue);
 
             if(file != null)
             {
-                entityBuilder.addBinaryBody(IMAGE, file);
+                entityBuilder.addBinaryBody(ContentKey, file);
             }
 
             HttpEntity entity = entityBuilder.build();
             post.setEntity(entity);
             HttpResponse response = client.execute(post);
             HttpEntity httpEntity = response.getEntity();
-            result = EntityUtils.toString(httpEntity);
+            String result = EntityUtils.toString(httpEntity);
             Log.v("result", result);
-        }
-        catch(Exception e)
+        } catch(Exception e)
         {
             e.printStackTrace();
         }

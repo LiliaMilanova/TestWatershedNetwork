@@ -1,2 +1,2 @@
-include ':openCVLibrary310', ':httpcore5-5.0-alpha1', ':httpclient-android-4.3.5'
+include ':openCVLibrary310', ':httpcore5-5.0-alpha1', ':httpclient-android-4.3.5', ':httpclient-4.5.2', ':httpmime-4.5.2', ':apache-mime4j-core-0.7.2', ':httpcore-4.4.4'
 include ':watershed'
