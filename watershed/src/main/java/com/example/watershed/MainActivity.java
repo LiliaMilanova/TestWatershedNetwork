@@ -13,6 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.entity.mime.HttpMultipartMode;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.util.EntityUtils;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
@@ -24,14 +29,18 @@ import org.opencv.core.Scalar;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.File;
+import java.io.IOException;
+
 /**
  * Created by changliu on 5/16/16.
  */
 public class MainActivity extends ActionBarActivity {
 
-    protected static final String TAG = null;
+    protected static final String TAG = "Watershed";
 
     private static int RESULT_LOAD_IMAGE = 1;
+
 
     // Chang, fix no Mat_M() implementation issue
     static {
@@ -87,6 +96,17 @@ public class MainActivity extends ActionBarActivity {
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
+            }
+        });
+
+
+        Button buttonSendImage = (Button) findViewById(R.id.buttonSendPicture);
+        buttonSendImage.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // send image to the cloud server
+                Log.e(TAG, "send image to the cloud server");
             }
         });
     }
@@ -149,6 +169,43 @@ public class MainActivity extends ActionBarActivity {
         return result1;
     }
 
+
+    public void sendPostRequest() {
+
+        try
+        {
+            HttpClient client = new DefaultHttpClient();
+            HttpPost post = new HttpPost(URL);
+
+            MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
+            entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
+
+            entityBuilder.addTextBody(USER_ID, userId);
+            entityBuilder.addTextBody(NAME, name);
+            entityBuilder.addTextBody(TYPE, type);
+            entityBuilder.addTextBody(COMMENT, comment);
+            entityBuilder.addTextBody(LATITUDE, String.valueOf(User.Latitude));
+            entityBuilder.addTextBody(LONGITUDE, String.valueOf(User.Longitude));
+
+            if(file != null)
+            {
+                entityBuilder.addBinaryBody(IMAGE, file);
+            }
+
+            HttpEntity entity = entityBuilder.build();
+            post.setEntity(entity);
+            HttpResponse response = client.execute(post);
+            HttpEntity httpEntity = response.getEntity();
+            result = EntityUtils.toString(httpEntity);
+            Log.v("result", result);
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+    }
 
 }
 

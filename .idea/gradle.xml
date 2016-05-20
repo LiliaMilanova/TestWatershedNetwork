@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/httpclient-android-4.3.5" />
+            <option value="$PROJECT_DIR$/httpcore5-5.0-alpha1" />
             <option value="$PROJECT_DIR$/openCVLibrary310" />
             <option value="$PROJECT_DIR$/watershed" />
           </set>
@@ -15,6 +17,8 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/httpclient-android-4.3.5" />
+            <option value="$PROJECT_DIR$/httpcore5-5.0-alpha1" />
             <option value="$PROJECT_DIR$/openCVLibrary310" />
             <option value="$PROJECT_DIR$/watershed" />
           </set>

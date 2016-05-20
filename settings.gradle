@@ -1,2 +1,2 @@
-include ':openCVLibrary310'
+include ':openCVLibrary310', ':httpcore5-5.0-alpha1', ':httpclient-android-4.3.5'
 include ':watershed'
