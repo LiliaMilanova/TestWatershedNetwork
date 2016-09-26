@@ -137,11 +137,8 @@ public class MainActivity extends ActionBarActivity {
             Log.i(TAG, picturePath);
             Mat img = Imgcodecs.imread(picturePath);
 
-            //Utils.bitmapToMat(bmp, img);
-            //Imgproc.cvtColor(img,result,Imgproc.COLOR_BGRA2BGR);
-
             result = steptowatershed(img);
-            //Imgproc.cvtColor(result, img,Imgproc.COLOR_BGR2BGRA,4);
+
             Utils.matToBitmap(result, bmp, true);
             Log.i(TAG, "all okay");
             imageView.setImageBitmap(bmp);
